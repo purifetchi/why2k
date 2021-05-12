@@ -1,0 +1,198 @@
+@font-face {
+	font-family: 'FORCED SQUARE';
+	src: url('../font/FORCEDSQUARE.woff2') format('woff2'),
+		 url('../font/FORCEDSQUARE.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background: #1b1b1b;
+
+	font-family: 'FORCED SQUARE';
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+* {
+	filter: contrast(1);
+	line-height: 14.4px;
+}
+
+div {
+	color: #4d4d4d;
+
+	font-size: 12px;
+}
+
+a {
+	text-decoration-style: dotted;
+	color: #4d4d4d;
+}
+
+hr {
+	border: 0;
+	border-top: 1px dotted #050505;
+}
+
+ul {
+	margin-top: -2px;
+	margin-right: 20px;
+}
+
+li {
+	text-align: right;
+	direction: rtl;
+}
+
+#container {
+	border: 1px solid #0d0d0d;
+	width: 750px;
+	height: 380px;
+
+	padding: 20px;
+
+	display: flex;
+	justify-content: space-around;
+}
+
+#extra {
+	width: 750px;
+	height: auto;
+
+	margin-top: 10px;
+}
+
+#left-side {
+	margin: 20px;
+
+	width: 230px;
+}
+
+#right-side {
+	margin: 20px;
+
+	width: 230px;
+}
+
+#right-side > .name {
+	text-align: right;
+}
+
+.slice {
+	display: flex;
+}
+
+.force-left {
+	float: left;
+	text-align: left;
+}
+
+.force-right {
+	float: right;
+	text-align: right;
+}
+
+.name {
+	font-size: 24px;
+	margin-bottom: 14px;
+}
+
+.desc {
+	width: 250px;
+}
+
+.avatar {
+	margin-bottom: 20px;
+	max-width: 200px;
+}
+
+.link-color-default {
+	color: white;
+}
+
+.link-color-1 {
+	color: #cd2000;
+}
+
+.link-color-2 {
+	color: #d64c00;
+}
+
+.link-color-3 {
+	color: #e39500;
+}
+
+.link-color-4 {
+	color: #eebf00;
+}
+
+.v-separator {
+	border-left: 1px dotted #050505;
+}
+
+.justify {
+	text-align: justify;
+}
+
+.small-right {
+	font-size: smaller;
+	text-align: right;
+	margin-right: 10px;
+}
+
+.hoverable:hover {
+	color: red;
+	font-weight: bold;
+}
+
+.scrollable {
+	max-height: 120px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+
+	margin-left: -5px !important;
+}
+
+@media only screen and (max-width: 799px) {
+	body {
+		height: auto;
+		width: auto;
+		padding: 10px;
+	}
+
+	#container {
+		width: auto;
+		height: auto;
+
+		flex-direction: column;
+	}
+
+	#extra {
+		width: auto;
+	}
+
+	#extra > * {
+		text-align: center;
+		float: none;
+	}
+
+	.slice {
+		flex-direction: column;
+	}
+
+	.v-separator {
+		border-bottom: 1px dotted #050505;
+		margin-top: 5px;
+	}
+}
